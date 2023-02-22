@@ -1,0 +1,33 @@
+.jumbotron{
+    background-color: rgb(162, 78, 240);
+    color: white;
+}
+.card-resto, .lista-productos{
+    flex: 1 250px;
+    padding: 10px;
+}
+
+button{
+    background-color: rgb(162, 78, 240);
+    color: white;
+    width: 100%;
+}
+
+button:hover{
+    color: rgb(162, 78, 240);
+    border: 1px solid rgb(162, 78, 240);
+    background-color: white;
+}
+
+footer{
+    background-color: rgb(162, 78, 240);
+}
+
+footer a {
+    color: rgb(248, 241, 255);
+}
+
+footer a:hover{
+    color: rgb(45, 21, 70);
+    text-decoration: none;
+}

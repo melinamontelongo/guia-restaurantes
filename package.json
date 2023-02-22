@@ -1,0 +1,26 @@
+{
+  "name": "guia-restaurantes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://melinamontelongo@bitbucket.org/practica-austral/guia-restaurantes.git"
+  },
+  "author": "Melina Montelongo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/practica-austral/guia-restaurantes/issues"
+  },
+  "homepage": "https://bitbucket.org/practica-austral/guia-restaurantes#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.2"
+  }
+}
