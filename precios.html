@@ -49,68 +49,93 @@
                 <li class="breadcrumb-item active" aria-current="page">Precios</li>
             </ol>
         </nav>
-        <div class="table-responsive">
-            <table class="table table-hover">
-                <thead class="thead-dark">
-                    <th>Restaurante</th>
-                    <th class="text-center"><span class="oi oi-person"></span> Individual</th>
-                    <th class="text-center"><span class="oi oi-people"></span> 2 personas</th>
-                    <th class="text-center"><span class="oi oi-people"></span><span class="oi oi-people"></span> Grupo familiar</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>El Rincón de la Pizza</th>
-                        <td class="text-center">$120</td>
-                        <td class="text-center">$200</td>
-                        <td class="text-center">$500</td>
-  
-                    </tr>
-                    <tr>
-                        <th>La casa del Spaghetti</th>
-                        <td class="text-center">$150</td>
-                        <td class="text-center">$220</td>
-                        <td class="text-center">$650</td>
-
-                    </tr>
-                    <tr>
-                        <th>Super Café</th>
-                        <td class="text-center">$80</td>
-                        <td class="text-center">$100</td>
-                        <td class="text-center">$300</td>
-                    </tr>
-                    <tr>
-                        <th>Siempre Verde</th>
-                        <td class="text-center">$100</td>
-                        <td class="text-center">$150</td>
-                        <td class="text-center">$450</td>
-                    </tr>
-                    <tr>
-                        <th>Déliceux</th>
-                        <td class="text-center">$400</td>
-                        <td class="text-center">$650</td>
-                        <td class="text-center">$1500</td>
-                    </tr>
-                    <tr>
-                        <th>Delicatessen</th>
-                        <td class="text-center">$300</td>
-                        <td class="text-center">$450</td>
-                        <td class="text-center">$1300</td>
-                    </tr>
-                    <tr>
-                        <th>Sabor del Mar</th>
-                        <td class="text-center">$180</td>
-                        <td class="text-center">$240</td>
-                        <td class="text-center">$540</td>
-                    </tr>
-                    <tr>
-                        <th>Ramen & Sushi</th>
-                        <td class="text-center">$200</td>
-                        <td class="text-center">$350</td>
-                        <td class="text-center">$800</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="compara-tab" data-toggle="tab" href="#compara" role="tab" aria-controls="compara" aria-selected="true">Compara</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="tarjetas-tab" data-toggle="tab" href="#tarjetas" role="tab" aria-controls="tarjetas" aria-selected="false">Métodos de pago</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="comentarios-tab" data-toggle="tab" href="#comentarios" role="tab" aria-controls="comentarios" aria-selected="false">Comentarios</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead class="thead-dark">
+                            <th>Restaurante</th>
+                            <th class="text-center"><span class="oi oi-person"></span> Individual</th>
+                            <th class="text-center"><span class="oi oi-people"></span> 2 personas</th>
+                            <th class="text-center"><span class="oi oi-people"></span><span class="oi oi-people"></span> Grupo familiar</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>El Rincón de la Pizza</th>
+                                <td class="text-center">$120</td>
+                                <td class="text-center">$200</td>
+                                <td class="text-center">$500</td>
+          
+                            </tr>
+                            <tr>
+                                <th>La casa del Spaghetti</th>
+                                <td class="text-center">$150</td>
+                                <td class="text-center">$220</td>
+                                <td class="text-center">$650</td>
+        
+                            </tr>
+                            <tr>
+                                <th>Super Café</th>
+                                <td class="text-center">$80</td>
+                                <td class="text-center">$100</td>
+                                <td class="text-center">$300</td>
+                            </tr>
+                            <tr>
+                                <th>Siempre Verde</th>
+                                <td class="text-center">$100</td>
+                                <td class="text-center">$150</td>
+                                <td class="text-center">$450</td>
+                            </tr>
+                            <tr>
+                                <th>Déliceux</th>
+                                <td class="text-center">$400</td>
+                                <td class="text-center">$650</td>
+                                <td class="text-center">$1500</td>
+                            </tr>
+                            <tr>
+                                <th>Delicatessen</th>
+                                <td class="text-center">$300</td>
+                                <td class="text-center">$450</td>
+                                <td class="text-center">$1300</td>
+                            </tr>
+                            <tr>
+                                <th>Sabor del Mar</th>
+                                <td class="text-center">$180</td>
+                                <td class="text-center">$240</td>
+                                <td class="text-center">$540</td>
+                            </tr>
+                            <tr>
+                                <th>Ramen & Sushi</th>
+                                <td class="text-center">$200</td>
+                                <td class="text-center">$350</td>
+                                <td class="text-center">$800</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+                <ul class="list-group">
+                    <li class="list-group-item">Contado</li>
+                    <li class="list-group-item">Débito</li>
+                    <li class="list-group-item">Crédito</li>
+                    <li class="list-group-item">Tarjeta VIP</li>
+                  </ul>
+            </div>
+            <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">Comentarios</div>
+          </div>
+        
     </div>
     <footer class="p-4 mt-4">
         <div class="row align-items-center">
