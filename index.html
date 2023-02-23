@@ -44,20 +44,37 @@
     </div>
     <div class="container">
         <div class="d-flex flex-wrap">
-            <div class="lista-productos d-flex flex-column text-center">
+            <div class="lista-productos flex-column">
+                <button class="btn" data-toggle="collapse" href="#quienesSomos" role="button"
+                    aria-expanded="false" aria-controls="quienesSomos">¿Quienes somos?</a>
+            </div>
+            <div class="lista-productos flex-column">
+                <button class="btn" type="button" data-toggle="collapse"
+                    data-target="#saberMas" aria-expanded="false"
+                    aria-controls="saberMas">¿Cómo puedo saber más?</button>
+            </div>
+            <div class="lista-productos flex-column">
+                <button class="btn" type="button" data-toggle="collapse"
+                    data-target="#esGratis" aria-expanded="false"
+                    aria-controls="esGratis">¿Es gratis?</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 text-center lista-productos collapse multi-collapse" id="quienesSomos">
                 <p>
                 <h3>¿Quienes somos?</h3>
                 <p>Somos un emprendimiento que pretende acercarte a los restaurantes que más te conviene en precio y
                     calidad.</p>
                 </p>
             </div>
-            <div class="lista-productos d-flex flex-column text-center">
+            <div class="col-sm-4 text-center lista-productos collapse multi-collapse" id="saberMas">
                 <p>
                 <h3>¿Cómo puedo saber más?</h3>
                 <p>Selecciona un restaurante de tu interés y se desplegará su información.</p>
                 </p>
+
             </div>
-            <div class="lista-productos d-flex flex-column text-center">
+            <div class="col-sm-4 text-center lista-productos collapse multi-collapse" id="esGratis">
                 <p>
                 <h3>¿Es gratis?</h3>
                 <p>Hacer uso de este servicio es totalmente gratis.</p>
@@ -67,7 +84,8 @@
         <hr>
         <div class="d-flex flex-wrap">
             <div class="card card-resto d-flex flex-column justify-content-between shadow m-3">
-                <img class="card-img-top" src="images/pizza.jpg" alt="imagen de pizza"  style="height:10rem; object-fit:cover">
+                <img class="card-img-top" src="images/pizza.jpg" alt="imagen de pizza"
+                    style="height:10rem; object-fit:cover">
                 <div class="card-body">
                     <h3 class="card-title">El rincón de la Pizza</h3>
                     <h5 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Montevideo</h5>
@@ -78,7 +96,8 @@
                 </div>
             </div>
             <div class="card card-resto d-flex flex-column justify-content-between shadow m-3">
-                <img class="card-img-top" src="images/spaghetti.jpg" alt="imagen de spaghetti"  style="height:10rem; object-fit:cover">
+                <img class="card-img-top" src="images/spaghetti.jpg" alt="imagen de spaghetti"
+                    style="height:10rem; object-fit:cover">
                 <div class="card-body">
                     <h3 class="card-title">La casa del Spaghetti</h3>
                     <h5 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Montevideo</h5>
@@ -90,18 +109,21 @@
 
             </div>
             <div class="card card-resto d-flex flex-column justify-content-between shadow m-3">
-                <img class="card-img-top" src="images/cafe.jpg" alt="imagen de café"  style="height:10rem; object-fit:cover">
+                <img class="card-img-top" src="images/cafe.jpg" alt="imagen de café"
+                    style="height:10rem; object-fit:cover">
                 <div class="card-body">
                     <h3 class="card-title">Super Café</h3>
                     <h5 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Montevideo</h5>
-                    <p class="card-text">Disfruta de tu café favorito en nuestro lugar, acondicionado para trabajo y reuniones.</p>
+                    <p class="card-text">Disfruta de tu café favorito en nuestro lugar, acondicionado para trabajo y
+                        reuniones.</p>
                 </div>
                 <div>
                     <button class="btn"><span class="oi oi-plus mr-2"></span>Más información</button>
                 </div>
             </div>
             <div class="card card-resto d-flex flex-column justify-content-between shadow m-3">
-                <img class="card-img-top" src="images/verde.jpg" alt="imagen de comida vegana"  style="height:10rem; object-fit:cover">
+                <img class="card-img-top" src="images/verde.jpg" alt="imagen de comida vegana"
+                    style="height:10rem; object-fit:cover">
                 <div class="card-body">
                     <h3 class="card-title">Siempre Verde</h3>
                     <h5 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Montevideo</h5>
@@ -112,7 +134,8 @@
                 </div>
             </div>
             <div class="card card-resto d-flex flex-column justify-content-between shadow m-3">
-                <img class="card-img-top" src="images/deliceux.jpg" alt="imagen de comida francesa"  style="height:10rem; object-fit:cover">
+                <img class="card-img-top" src="images/deliceux.jpg" alt="imagen de comida francesa"
+                    style="height:10rem; object-fit:cover">
                 <div class="card-body">
                     <h3 class="card-title">Délicieux</h3>
                     <h5 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Canelones</h5>
@@ -123,7 +146,8 @@
                 </div>
             </div>
             <div class="card card-resto d-flex flex-column justify-content-between shadow m-3">
-                <img class="card-img-top" src="images/delicatessen.jpg" alt="imagen de postres"  style="height:10rem; object-fit:cover">
+                <img class="card-img-top" src="images/delicatessen.jpg" alt="imagen de postres"
+                    style="height:10rem; object-fit:cover">
                 <div class="card-body">
                     <h3 class="card-title">Delicatessen</h3>
                     <h5 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Maldonado</h5>
@@ -134,7 +158,8 @@
                 </div>
             </div>
             <div class="card card-resto d-flex flex-column justify-content-between shadow m-3">
-                <img class="card-img-top" src="images/mar.jpg" alt="imagen de comida de mar"  style="height:10rem; object-fit:cover">
+                <img class="card-img-top" src="images/mar.jpg" alt="imagen de comida de mar"
+                    style="height:10rem; object-fit:cover">
                 <div class="card-body">
                     <h3 class="card-title">Sabor del Mar</h3>
                     <h5 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Montevideo</h5>
@@ -145,7 +170,8 @@
                 </div>
             </div>
             <div class="card card-resto d-flex flex-column justify-content-between shadow m-3">
-                <img class="card-img-top" src="images/sushi.jpg" alt="imagen de sushi"  style="height:10rem; object-fit:cover">
+                <img class="card-img-top" src="images/sushi.jpg" alt="imagen de sushi"
+                    style="height:10rem; object-fit:cover">
                 <div class="card-body">
                     <h3 class="card-title">Ramen & Sushi</h3>
                     <h5 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Montevideo</h5>

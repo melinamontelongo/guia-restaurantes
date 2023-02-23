@@ -40,7 +40,16 @@ button:hover {
     border: 1px solid rgb(162, 78, 240);
     background-color: white;
 }
-
+.btn-tarjetas{
+    text-align:start;
+    background-color: white;
+    color: rgb(162, 78, 240);
+    border: 1px solid rgb(162, 78, 240);
+}
+.badge{
+    background-color: rgb(162, 78, 240);
+    color: white;
+}
 footer {
     background-color: rgb(162, 78, 240);
 }

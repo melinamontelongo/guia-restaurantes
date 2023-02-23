@@ -126,16 +126,69 @@
                 </div>
             </div>
             <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
-                <ul class="list-group">
-                    <li class="list-group-item">Contado</li>
-                    <li class="list-group-item">Débito</li>
-                    <li class="list-group-item">Crédito</li>
-                    <li class="list-group-item">Tarjeta VIP</li>
-                  </ul>
+                <div class="accordion" id="acordionTarjetas">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                          <button class="btn btn-tarjetas" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Contado
+                          </button>
+                        </h5>
+                      </div>
+                  
+                      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#acordionTarjetas">
+                        <div class="card-body">
+                            Pagando al contado y recibes un 20% de descuento en los restaurantes que figuran en nuestra página.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                          <button class="btn btn-tarjetas" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Débito
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#acordionTarjetas">
+                        <div class="card-body">
+                          Pagando con débito recibirás una bonificación que podrás usar la próxima vez que vuelvas al restaurante.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                          <button class="btn btn-tarjetas" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Crédito
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#acordionTarjetas">
+                        <div class="card-body">
+                          Pagando con crédito podes abonar hasta en 3 cuotas sin recargo.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingFour">
+                      <h5 class="mb-0">
+                        <button class="btn btn-tarjetas" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          Tarjeta VIP <span class="badge">Nuevo</span>
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#acordionTarjetas">
+                      <div class="card-body">
+                        Hacete socio en cualquiera de los restaurantes listados aquí para obtener múltiples beneficios.
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
             <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">Comentarios</div>
           </div>
-        
     </div>
     <footer class="p-4 mt-4">
         <div class="row align-items-center">
