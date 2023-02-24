@@ -1,0 +1,99 @@
+$light-purple: rgb(198, 155, 238);
+$purple:  rgb(162, 78, 240);
+$dark-purple: rgb(45, 21, 70);
+$white: rgb(255, 255, 255);
+$transparent-gray-dark:  rgba(255, 255, 255, 0.322); 
+$transparent-gray-light: rgba(255, 255, 255, 0.651);
+
+@mixin borders($width, $style, $color){
+    border: $width $style $color
+}
+@mixin gradientBgImage($direction, $color1, $color2, $bgImageUrl){
+    background-image: linear-gradient(to $direction, $color1 0%, $color2 100%),
+        url($bgImageUrl);
+}
+.jumbotron {
+    background-size: cover;
+    background-position: center;
+}
+
+.index-jumbo {
+    @include gradientBgImage(bottom, $transparent-gray-dark, $transparent-gray-light, "../images/banner_index.jpg")
+}
+
+.about-jumbo {
+    @include gradientBgImage(bottom, $transparent-gray-dark, $transparent-gray-light, "../images/banner_about.jpg")
+}
+
+.precios-jumbo {
+    @include gradientBgImage(bottom, $transparent-gray-dark, $transparent-gray-light, "../images/banner_precios.jpg")
+}
+
+.contacto-jumbo {
+    @include gradientBgImage(bottom, $transparent-gray-dark, $transparent-gray-light, "../images/banner_contacto.jpg")
+}
+
+.card-resto,
+.lista-productos {
+    flex: 1 250px;
+    padding: 10px;
+}
+
+.card-resto > div > button, 
+.lista-productos > button {
+    background-color: $purple;
+    color: $white;
+    width: 100%;
+}
+
+.card-resto > div > button:hover, 
+.lista-productos > button:hover {
+    color: $purple;
+    background-color: $white;
+    @include borders(1px, solid, $purple)
+}
+.btn-tarjetas{
+    text-align:start;
+    background-color: $white;
+    color: $purple;
+    @include borders(1px, solid, $purple)
+}
+
+.btn-contacto{
+    background-color: $purple;
+    color: $white;
+}
+.btn-info-modal-open{
+    background-color: $light-purple!important;
+    color: $white;
+}
+.btn-contacto:hover{
+    background-color: $white;
+    color: $purple;
+    @include borders(1px, solid, $purple)
+}
+.badge{
+    background-color: $purple;
+    color: $white;
+}
+.info-badge{
+    cursor: pointer;
+}
+footer {
+    background-color: $purple;
+}
+
+footer a {
+    color: $white;
+}
+
+footer a:hover {
+    color: $dark-purple;
+    text-decoration: none;
+}
+
+.carousel-item > img{
+    height: 70vh;
+    object-fit: cover;
+    object-position: bottom;
+}

@@ -5,17 +5,17 @@
 
 .index-jumbo {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.322) 0%, rgba(255, 255, 255, 0.651) 100%),
-        url("images/banner_index.jpg");
+        url("../images/banner_index.jpg");
 }
 
 .about-jumbo {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.322) 0%, rgba(255, 255, 255, 0.651) 100%),
-        url("images/banner_about.jpg");
+        url("../images/banner_about.jpg");
 }
 
 .precios-jumbo {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.322) 0%, rgba(255, 255, 255, 0.651) 100%),
-        url("images/banner_precios.jpg");
+        url("../images/banner_precios.jpg");
 }
 
 .contacto-jumbo {

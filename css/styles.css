@@ -1,0 +1,73 @@
+.jumbotron {
+  background-size: cover;
+  background-position: center; }
+
+.index-jumbo {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.322) 0%, rgba(255, 255, 255, 0.651) 100%), url("../images/banner_index.jpg"); }
+
+.about-jumbo {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.322) 0%, rgba(255, 255, 255, 0.651) 100%), url("../images/banner_about.jpg"); }
+
+.precios-jumbo {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.322) 0%, rgba(255, 255, 255, 0.651) 100%), url("../images/banner_precios.jpg"); }
+
+.contacto-jumbo {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.322) 0%, rgba(255, 255, 255, 0.651) 100%), url("../images/banner_contacto.jpg"); }
+
+.card-resto,
+.lista-productos {
+  flex: 1 250px;
+  padding: 10px; }
+
+.card-resto > div > button,
+.lista-productos > button {
+  background-color: #a24ef0;
+  color: white;
+  width: 100%; }
+
+.card-resto > div > button:hover,
+.lista-productos > button:hover {
+  color: #a24ef0;
+  background-color: white;
+  border: 1px solid #a24ef0; }
+
+.btn-tarjetas {
+  text-align: start;
+  background-color: white;
+  color: #a24ef0;
+  border: 1px solid #a24ef0; }
+
+.btn-contacto {
+  background-color: #a24ef0;
+  color: white; }
+
+.btn-info-modal-open {
+  background-color: #c69bee !important;
+  color: white; }
+
+.btn-contacto:hover {
+  background-color: white;
+  color: #a24ef0;
+  border: 1px solid #a24ef0; }
+
+.badge {
+  background-color: #a24ef0;
+  color: white; }
+
+.info-badge {
+  cursor: pointer; }
+
+footer {
+  background-color: #a24ef0; }
+
+footer a {
+  color: white; }
+
+footer a:hover {
+  color: #2d1546;
+  text-decoration: none; }
+
+.carousel-item > img {
+  height: 70vh;
+  object-fit: cover;
+  object-position: bottom; }
