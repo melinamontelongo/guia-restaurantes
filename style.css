@@ -29,19 +29,29 @@
     padding: 10px;
 }
 
-button {
+.card-resto > div > button, 
+.lista-productos > button {
     background-color: rgb(162, 78, 240);
     color: white;
     width: 100%;
 }
 
-button:hover {
+.card-resto > button:hover {
     color: rgb(162, 78, 240);
     border: 1px solid rgb(162, 78, 240);
     background-color: white;
 }
 .btn-tarjetas{
     text-align:start;
+    background-color: white;
+    color: rgb(162, 78, 240);
+    border: 1px solid rgb(162, 78, 240);
+}
+.btn-contacto{
+    background-color: rgb(162, 78, 240);
+    color: white;
+}
+.btn-contacto:hover{
     background-color: white;
     color: rgb(162, 78, 240);
     border: 1px solid rgb(162, 78, 240);

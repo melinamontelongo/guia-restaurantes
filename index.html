@@ -45,17 +45,15 @@
     <div class="container">
         <div class="d-flex flex-wrap">
             <div class="lista-productos flex-column">
-                <button class="btn" data-toggle="collapse" href="#quienesSomos" role="button"
-                    aria-expanded="false" aria-controls="quienesSomos">¿Quienes somos?</a>
+                <button class="btn" data-toggle="collapse" href="#quienesSomos" role="button" aria-expanded="false"
+                    aria-controls="quienesSomos">¿Quienes somos?</a>
             </div>
             <div class="lista-productos flex-column">
-                <button class="btn" type="button" data-toggle="collapse"
-                    data-target="#saberMas" aria-expanded="false"
+                <button class="btn" type="button" data-toggle="collapse" data-target="#saberMas" aria-expanded="false"
                     aria-controls="saberMas">¿Cómo puedo saber más?</button>
             </div>
             <div class="lista-productos flex-column">
-                <button class="btn" type="button" data-toggle="collapse"
-                    data-target="#esGratis" aria-expanded="false"
+                <button class="btn" type="button" data-toggle="collapse" data-target="#esGratis" aria-expanded="false"
                     aria-controls="esGratis">¿Es gratis?</button>
             </div>
         </div>
@@ -92,7 +90,7 @@
                     <p class="card-text">La mejor pizza de la ciudad.</p>
                 </div>
                 <div>
-                    <button class="btn"><span class="oi oi-plus mr-2"></span>Más información</button>
+                    <button class="btn" data-toggle="modal" data-target="#contacto"><span class="oi oi-plus mr-2"></span>Más información</button>
                 </div>
             </div>
             <div class="card card-resto d-flex flex-column justify-content-between shadow m-3">
@@ -104,7 +102,7 @@
                     <p class="card-text">La mejor pasta de tu vida.</p>
                 </div>
                 <div>
-                    <button class="btn"><span class="oi oi-plus mr-2"></span>Más información</button>
+                    <button class="btn" data-toggle="modal" data-target="#contacto"><span class="oi oi-plus mr-2"></span>Más información</button>
                 </div>
 
             </div>
@@ -118,7 +116,7 @@
                         reuniones.</p>
                 </div>
                 <div>
-                    <button class="btn"><span class="oi oi-plus mr-2"></span>Más información</button>
+                    <button class="btn" data-toggle="modal" data-target="#contacto"><span class="oi oi-plus mr-2"></span>Más información</button>
                 </div>
             </div>
             <div class="card card-resto d-flex flex-column justify-content-between shadow m-3">
@@ -130,7 +128,7 @@
                     <p>¿Buscando comida vegetariana o vegana? Este es tu lugar.</p>
                 </div>
                 <div>
-                    <button class="btn"><span class="oi oi-plus mr-2"></span>Más información</button>
+                    <button class="btn" data-toggle="modal" data-target="#contacto"><span class="oi oi-plus mr-2"></span>Más información</button>
                 </div>
             </div>
             <div class="card card-resto d-flex flex-column justify-content-between shadow m-3">
@@ -142,7 +140,7 @@
                     <p class="card-text">Con dos estrellas Michelin, no es necesario agregar nada más.</p>
                 </div>
                 <div>
-                    <button class="btn"><span class="oi oi-plus mr-2"></span>Más información</button>
+                    <button class="btn" data-toggle="modal" data-target="#contacto"><span class="oi oi-plus mr-2"></span>Más información</button>
                 </div>
             </div>
             <div class="card card-resto d-flex flex-column justify-content-between shadow m-3">
@@ -154,7 +152,7 @@
                     <p class="card-text">Los mejores postres, para regalar, regalarse, o disfrutar con nosotros.</p>
                 </div>
                 <div>
-                    <button class="btn"><span class="oi oi-plus mr-2"></span>Más información</button>
+                    <button class="btn" data-toggle="modal" data-target="#contacto"><span class="oi oi-plus mr-2"></span>Más información</button>
                 </div>
             </div>
             <div class="card card-resto d-flex flex-column justify-content-between shadow m-3">
@@ -166,7 +164,7 @@
                     <p class="card-text">La mejor comida directo del mar.</p>
                 </div>
                 <div>
-                    <button class="btn"><span class="oi oi-plus mr-2"></span>Más información</button>
+                    <button class="btn" data-toggle="modal" data-target="#contacto"><span class="oi oi-plus mr-2"></span>Más información</button>
                 </div>
             </div>
             <div class="card card-resto d-flex flex-column justify-content-between shadow m-3">
@@ -178,7 +176,7 @@
                     <p class="card-text">Especialistas en comida asiática.</p>
                 </div>
                 <div>
-                    <button class="btn"><span class="oi oi-plus mr-2"></span>Más información</button>
+                    <button class="btn" data-toggle="modal" data-target="#contacto"><span class="oi oi-plus mr-2"></span>Más información</button>
                 </div>
             </div>
         </div>
@@ -206,6 +204,35 @@
             </div>
         </div>
     </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="contactoLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactoLabel">Contacto con el restaurante</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                   <form>
+                    <div class="form-group">
+                        <label for="email" class="col-form-label">Tu email: </label>
+                        <input type="email" class="form-control" name="email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje: </label>
+                        <textarea name="mensaje" id="mensaje" class="form-control"></textarea>
+                    </div>
+                   </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-contacto">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
