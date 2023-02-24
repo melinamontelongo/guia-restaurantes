@@ -5,9 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- build:css dist/precios.css -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
+  <!-- endbuild -->
   <title>Guia Restaurantes</title>
 </head>
 
@@ -72,8 +74,11 @@
               <th class="text-center"><span class="oi oi-person"></span> Individual</th>
               <th class="text-center"><span class="oi oi-people"></span> 2 personas</th>
               <th class="text-center"><span class="oi oi-people"></span><span class="oi oi-people"></span> Grupo
-                familiar 
-                <span class="info-badge badge badge-secondary rounded-circle"  data-container="body" data-toggle="popover" data-placement="top" data-content="Promociones válidas hasta 6 personas">?</span></th>
+                familiar
+                <span class="info-badge badge badge-secondary rounded-circle" data-container="body"
+                  data-toggle="popover" data-placement="top"
+                  data-content="Promociones válidas hasta 6 personas">?</span>
+              </th>
             </thead>
             <tbody>
               <tr>
@@ -222,9 +227,11 @@
       </div>
     </div>
   </footer>
+  <!-- build:js dist/precios.js -->
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- endbuild -->
   <script>
     $(function () {
       $('[data-toggle="popover"]').popover()
