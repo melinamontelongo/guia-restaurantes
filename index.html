@@ -122,7 +122,7 @@
                     <p class="card-text">La mejor pizza de la ciudad.</p>
                 </div>
                 <div>
-                    <button class="btn" data-toggle="modal" data-target="#contacto"><span
+                    <button class="btn btn-info-modal" data-toggle="modal" data-target="#contacto"><span
                             class="oi oi-plus mr-2"></span>Más información</button>
                 </div>
             </div>
@@ -136,7 +136,7 @@
                     <p class="card-text">La mejor pasta de tu vida.</p>
                 </div>
                 <div>
-                    <button class="btn" data-toggle="modal" data-target="#contacto"><span
+                    <button class="btn btn-info-modal" data-toggle="modal" data-target="#contacto"><span
                             class="oi oi-plus mr-2"></span>Más información</button>
                 </div>
 
@@ -152,7 +152,7 @@
                         reuniones.</p>
                 </div>
                 <div>
-                    <button class="btn" data-toggle="modal" data-target="#contacto"><span
+                    <button class="btn btn-info-modal" data-toggle="modal" data-target="#contacto"><span
                             class="oi oi-plus mr-2"></span>Más información</button>
                 </div>
             </div>
@@ -166,7 +166,7 @@
                     <p>¿Buscando comida vegetariana o vegana? Este es tu lugar.</p>
                 </div>
                 <div>
-                    <button class="btn" data-toggle="modal" data-target="#contacto"><span
+                    <button class="btn btn-info-modal" data-toggle="modal" data-target="#contacto"><span
                             class="oi oi-plus mr-2"></span>Más información</button>
                 </div>
             </div>
@@ -180,7 +180,7 @@
                     <p class="card-text">Con dos estrellas Michelin, no es necesario agregar nada más.</p>
                 </div>
                 <div>
-                    <button class="btn" data-toggle="modal" data-target="#contacto"><span
+                    <button class="btn btn-info-modal" data-toggle="modal" data-target="#contacto"><span
                             class="oi oi-plus mr-2"></span>Más información</button>
                 </div>
             </div>
@@ -194,7 +194,7 @@
                     <p class="card-text">Los mejores postres, para regalar, regalarse, o disfrutar con nosotros.</p>
                 </div>
                 <div>
-                    <button class="btn" data-toggle="modal" data-target="#contacto"><span
+                    <button class="btn btn-info-modal" data-toggle="modal" data-target="#contacto"><span
                             class="oi oi-plus mr-2"></span>Más información</button>
                 </div>
             </div>
@@ -208,7 +208,7 @@
                     <p class="card-text">La mejor comida directo del mar.</p>
                 </div>
                 <div>
-                    <button class="btn" data-toggle="modal" data-target="#contacto"><span
+                    <button class="btn btn-info-modal" data-toggle="modal" data-target="#contacto"><span
                             class="oi oi-plus mr-2"></span>Más información</button>
                 </div>
             </div>
@@ -222,7 +222,7 @@
                     <p class="card-text">Especialistas en comida asiática.</p>
                 </div>
                 <div>
-                    <button class="btn" data-toggle="modal" data-target="#contacto"><span
+                    <button class="btn btn-info-modal" data-toggle="modal" data-target="#contacto"><span
                             class="oi oi-plus mr-2"></span>Más información</button>
                 </div>
             </div>
@@ -286,6 +286,14 @@
     <script>
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
+            $('#contacto').on('shown.bs.modal', function(e) {
+                $('.btn-info-modal').addClass('btn-info-modal-open')
+                $('.btn-info-modal').prop('disabled', true)
+            })
+            $('#contacto').on('hidden.bs.modal', function(e) {
+                $('.btn-info-modal').removeClass('btn-info-modal-open')
+                $('.btn-info-modal').prop('disabled', false)
+            })
         })
     </script>
 </body>

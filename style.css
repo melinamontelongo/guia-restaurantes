@@ -48,8 +48,13 @@
     color: rgb(162, 78, 240);
     border: 1px solid rgb(162, 78, 240);
 }
+
 .btn-contacto{
     background-color: rgb(162, 78, 240);
+    color: white;
+}
+.btn-info-modal-open{
+    background-color: rgb(198, 155, 238)!important;
     color: white;
 }
 .btn-contacto:hover{
