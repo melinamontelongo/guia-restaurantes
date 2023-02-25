@@ -1,1 +1,284 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="dist/index.css"><title>Guia Restaurantes</title></head><body><nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top"><a href="#" class="navbar-brand">Guia Restaurantes</a> <button class="navbar-toggler w-25" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav"><li class="nav-item active"><a class="nav-link" href="./index.html">Inicio<span class="sr-only">(current)</span></a></li><li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li><li class="nav-item"><a class="nav-link" href="./precios.html">Precios</a></li><li class="nav-item"><a class="nav-link" href="#">Términos y condiciones</a></li><li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li></ul></div></nav><div class="jumbotron index-jumbo shadow rounded-0 mt-4"><h1 class="text-dark">Restaurantes</h1><p class="lead">Conocé los restaurantes más importantes de tu ciudad.</p></div><div class="container"><div class="d-flex flex-wrap"><div class="lista-productos flex-column"><button class="btn" data-toggle="collapse" href="#quienesSomos" role="button" aria-expanded="false" aria-controls="quienesSomos">¿Quienes somos?</button></div><div class="lista-productos flex-column"><button class="btn" type="button" data-toggle="collapse" data-target="#saberMas" aria-expanded="false" aria-controls="saberMas">¿Cómo puedo saber más?</button></div><div class="lista-productos flex-column"><button class="btn" type="button" data-toggle="collapse" data-target="#esGratis" aria-expanded="false" aria-controls="esGratis">¿Es gratis?</button></div></div><div class="row"><div class="col-sm-4 text-center lista-productos collapse multi-collapse" id="quienesSomos"><p></p><h3>¿Quienes somos?</h3><p>Somos un emprendimiento que pretende acercarte a los restaurantes que más te conviene en precio y calidad.</p><p></p></div><div class="col-sm-4 text-center lista-productos collapse multi-collapse" id="saberMas"><p></p><h3>¿Cómo puedo saber más?</h3><p>En nuestro sitio disponemos de información acerca de las promociones vigentes y precios aproximados de cada lugar. Por consultas específicas, selecciona un restaurante de tu interés y se desplegará un formulario de contacto.</p><p></p></div><div class="col-sm-4 text-center lista-productos collapse multi-collapse" id="esGratis"><p></p><h3>¿Es gratis?</h3><p>Hacer uso de este servicio es totalmente gratis.</p><p></p></div></div><hr><div id="carouselResto" class="carousel slide carousel-fade shadow" data-ride="carousel" data-interval="2000"><ol class="carousel-indicators"><li data-target="#carouselResto" data-slide-to="0" class="active"></li><li data-target="#carouselResto" data-slide-to="1"></li><li data-target="#carouselResto" data-slide-to="2"></li><li data-target="#carouselResto" data-slide-to="3"></li></ol><div class="carousel-inner"><div class="carousel-item active"><img class="d-block w-100" src=".//images/carousel_1.jpg" alt="First slide"></div><div class="carousel-item"><img class="d-block w-100" src=".//images/carousel_2.jpg" alt="Second slide"></div><div class="carousel-item"><img class="d-block w-100" src=".//images/carousel_3.jpg" alt="Third slide"></div><div class="carousel-item"><img class="d-block w-100" src=".//images/carousel_4.jpg" alt="Fourth slide"></div></div><a class="carousel-control-prev" href="#carouselResto" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Anterior</span> </a><a class="carousel-control-next" href="#carouselResto" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Siguiente</span></a></div><hr><div class="d-flex flex-wrap"><div class="card card-resto d-flex flex-column justify-content-between shadow m-3"><img class="card-img-top" src="./images/pizza.jpg" alt="imagen de pizza" style="height:10rem;object-fit:cover"><div class="card-body"><h3 class="card-title text-center" data-toggle="tooltip" data-placement="top" title="30% de descuento con la Tarjeta VIP">El rincón de la Pizza</h3><h5 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Montevideo</h5><p class="card-text">La mejor pizza de la ciudad.</p></div><div><button class="btn btn-info-modal" data-toggle="modal" data-target="#contacto"><span class="oi oi-plus mr-2"></span>Más información</button></div></div><div class="card card-resto d-flex flex-column justify-content-between shadow m-3"><img class="card-img-top" src="./images/spaghetti.jpg" alt="imagen de spaghetti" style="height:10rem;object-fit:cover"><div class="card-body"><h3 class="card-title text-center" data-toggle="tooltip" data-placement="top" title="2x1 los días lunes y miércoles">La casa del Spaghetti</h3><h5 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Montevideo</h5><p class="card-text">La mejor pasta de tu vida.</p></div><div><button class="btn btn-info-modal" data-toggle="modal" data-target="#contacto"><span class="oi oi-plus mr-2"></span>Más información</button></div></div><div class="card card-resto d-flex flex-column justify-content-between shadow m-3"><img class="card-img-top" src="./images/cafe.jpg" alt="imagen de café" style="height:10rem;object-fit:cover"><div class="card-body"><h3 class="card-title text-center" data-toggle="tooltip" data-placement="top" title="Un expresso gratis en horario matutino (no incluye acompañamiento)">Super Café</h3><h5 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Montevideo</h5><p class="card-text">Disfruta de tu café favorito en nuestro lugar, acondicionado para trabajo y reuniones.</p></div><div><button class="btn btn-info-modal" data-toggle="modal" data-target="#contacto"><span class="oi oi-plus mr-2"></span>Más información</button></div></div><div class="card card-resto d-flex flex-column justify-content-between shadow m-3"><img class="card-img-top" src="./images/verde.jpg" alt="imagen de comida vegana" style="height:10rem;object-fit:cover"><div class="card-body"><h3 class="card-title text-center" data-toggle="tooltip" data-placement="top" title="Platos veganos con 50% de descuento">Siempre Verde</h3><h5 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Montevideo</h5><p>¿Buscando comida vegetariana o vegana? Este es tu lugar.</p></div><div><button class="btn btn-info-modal" data-toggle="modal" data-target="#contacto"><span class="oi oi-plus mr-2"></span>Más información</button></div></div><div class="card card-resto d-flex flex-column justify-content-between shadow m-3"><img class="card-img-top" src="./images/deliceux.jpg" alt="imagen de comida francesa" style="height:10rem;object-fit:cover"><div class="card-body"><h3 class="card-title text-center" data-toggle="tooltip" data-placement="top" title="Sin promociones disponibles">Délicieux</h3><h5 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Canelones</h5><p class="card-text">Con dos estrellas Michelin, no es necesario agregar nada más.</p></div><div><button class="btn btn-info-modal" data-toggle="modal" data-target="#contacto"><span class="oi oi-plus mr-2"></span>Más información</button></div></div><div class="card card-resto d-flex flex-column justify-content-between shadow m-3"><img class="card-img-top" src="./images/delicatessen.jpg" alt="imagen de postres" style="height:10rem;object-fit:cover"><div class="card-body"><h3 class="card-title text-center" data-toggle="tooltip" data-placement="top" title="Si es tu cumpleaños, sos nuestro invitado">Delicatessen</h3><h5 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Maldonado</h5><p class="card-text">Los mejores postres, para regalar, regalarse, o disfrutar con nosotros.</p></div><div><button class="btn btn-info-modal" data-toggle="modal" data-target="#contacto"><span class="oi oi-plus mr-2"></span>Más información</button></div></div><div class="card card-resto d-flex flex-column justify-content-between shadow m-3"><img class="card-img-top" src="./images/mar.jpg" alt="imagen de comida de mar" style="height:10rem;object-fit:cover"><div class="card-body"><h3 class="card-title text-center" data-toggle="tooltip" data-placement="top" title="Sin promociones disponibles">Sabor del Mar</h3><h5 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Montevideo</h5><p class="card-text">La mejor comida directo del mar.</p></div><div><button class="btn btn-info-modal" data-toggle="modal" data-target="#contacto"><span class="oi oi-plus mr-2"></span>Más información</button></div></div><div class="card card-resto d-flex flex-column justify-content-between shadow m-3"><img class="card-img-top" src="./images/sushi.jpg" alt="imagen de sushi" style="height:10rem;object-fit:cover"><div class="card-body"><h3 class="card-title text-center" data-toggle="tooltip" data-placement="top" title="Descuento del 40% con tarjeta de crédito en horario nocturno">Ramen & Sushi</h3><h5 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Montevideo</h5><p class="card-text">Especialistas en comida asiática.</p></div><div><button class="btn btn-info-modal" data-toggle="modal" data-target="#contacto"><span class="oi oi-plus mr-2"></span>Más información</button></div></div></div></div><footer class="p-4 mt-4"><div class="row align-items-center"><div class="col-sm-4 d-flex flex-column"><a href="https://www.facebook.com">Facebook</a> <a href="https://www.instagram.com">Instagram</a> <a href="https://www.twitter.com">Twitter</a> <a href="https://www.google.com">Google+</a></div><div class="col-sm-4 d-flex flex-column"><h3>Oficina Central</h3><address><p><span class="oi oi-home mr-2"></span>Calle 555, Montevideo, Uruguay</p><p><span class="oi oi-phone mr-2"></span>+598 55 555 555</p><p><span class="oi oi-inbox mr-2"></span>contacto@guiarestaurantes.com</p></address></div><div class="col-sm-4 d-flex flex-column align-items-sm-end"><a href="./about.html">Nosotros</a> <a href="#">Términos y condiciones</a> <a href="./contacto.html">Contacto</a></div></div></footer><div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="contactoLabel" aria-hidden="true"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="contactoLabel">Contacto con el restaurante</h5><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><form><div class="form-group"><label for="email" class="col-form-label">Tu email:</label> <input type="email" class="form-control" name="email" id="email"></div><div class="form-group"><label for="mensaje">Mensaje:</label> <textarea name="mensaje" id="mensaje" class="form-control"></textarea></div></form></div><div class="modal-footer"><button type="button" class="btn btn-contacto">Enviar</button></div></div></div></div><script src="dist/index.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.ee16512ca82d4d2eb883.css">
+    <title>Guia Restaurantes</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a href="#" class="navbar-brand">Guia Restaurantes</a>
+        <button class="navbar-toggler w-25" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./precios.html">Precios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Términos y condiciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron index-jumbo shadow rounded-0 mt-4">
+        <h1 class="text-dark">Restaurantes</h1>
+        <p class="lead">Conocé los restaurantes más importantes de tu ciudad.</p>
+    </div>
+    <div class="container">
+        <div class="d-flex flex-wrap">
+            <div class="lista-productos flex-column">
+                <button class="btn" data-toggle="collapse" href="#quienesSomos" role="button" aria-expanded="false"
+                    aria-controls="quienesSomos">¿Quienes somos?</a>
+            </div>
+            <div class="lista-productos flex-column">
+                <button class="btn" type="button" data-toggle="collapse" data-target="#saberMas" aria-expanded="false"
+                    aria-controls="saberMas">¿Cómo puedo saber más?</button>
+            </div>
+            <div class="lista-productos flex-column">
+                <button class="btn" type="button" data-toggle="collapse" data-target="#esGratis" aria-expanded="false"
+                    aria-controls="esGratis">¿Es gratis?</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 text-center lista-productos collapse multi-collapse" id="quienesSomos">
+                <p>
+                <h3>¿Quienes somos?</h3>
+                <p>Somos un emprendimiento que pretende acercarte a los restaurantes que más te conviene en precio y
+                    calidad.</p>
+                </p>
+            </div>
+            <div class="col-sm-4 text-center lista-productos collapse multi-collapse" id="saberMas">
+                <p>
+                <h3>¿Cómo puedo saber más?</h3>
+                <p>En nuestro sitio disponemos de información acerca de las promociones vigentes y precios aproximados de cada lugar. Por consultas específicas, selecciona un restaurante de tu interés y se desplegará un formulario de contacto. </p>
+                </p>
+
+            </div>
+            <div class="col-sm-4 text-center lista-productos collapse multi-collapse" id="esGratis">
+                <p>
+                <h3>¿Es gratis?</h3>
+                <p>Hacer uso de este servicio es totalmente gratis.</p>
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div id="carouselResto" class="carousel slide carousel-fade shadow">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselResto" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselResto" data-slide-to="1"></li>
+              <li data-target="#carouselResto" data-slide-to="2"></li>
+              <li data-target="#carouselResto" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src=".//images/carousel_1.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src=".//images/carousel_2.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src=".//images/carousel_3.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src=".//images/carousel_4.jpg" alt="Fourth slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselResto" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselResto" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Siguiente</span>
+            </a>
+          </div>
+          <hr>
+        <div class="d-flex flex-wrap">
+            <div class="card card-resto d-flex flex-column justify-content-between shadow m-3">
+                <img class="card-img-top" src="./images/pizza.jpg" alt="imagen de pizza"
+                    style="height:10rem; object-fit:cover">
+                <div class="card-body">
+                    <h3 class="card-title text-center" data-toggle="tooltip" data-placement="top"
+                        title="30% de descuento con la Tarjeta VIP">El rincón de la Pizza</h3>
+                    <h5 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Montevideo</h5>
+                    <p class="card-text">La mejor pizza de la ciudad.</p>
+                </div>
+                <div>
+                    <button class="btn btn-info-modal" data-toggle="modal" data-target="#contacto"><span
+                            class="oi oi-plus mr-2"></span>Más información</button>
+                </div>
+            </div>
+            <div class="card card-resto d-flex flex-column justify-content-between shadow m-3">
+                <img class="card-img-top" src="./images/spaghetti.jpg" alt="imagen de spaghetti"
+                    style="height:10rem; object-fit:cover">
+                <div class="card-body">
+                    <h3 class="card-title text-center" data-toggle="tooltip" data-placement="top"
+                        title="2x1 los días lunes y miércoles">La casa del Spaghetti</h3>
+                    <h5 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Montevideo</h5>
+                    <p class="card-text">La mejor pasta de tu vida.</p>
+                </div>
+                <div>
+                    <button class="btn btn-info-modal" data-toggle="modal" data-target="#contacto"><span
+                            class="oi oi-plus mr-2"></span>Más información</button>
+                </div>
+
+            </div>
+            <div class="card card-resto d-flex flex-column justify-content-between shadow m-3">
+                <img class="card-img-top" src="./images/cafe.jpg" alt="imagen de café"
+                    style="height:10rem; object-fit:cover">
+                <div class="card-body">
+                    <h3 class="card-title text-center" data-toggle="tooltip" data-placement="top"
+                        title="Un expresso gratis en horario matutino (no incluye acompañamiento)">Super Café</h3>
+                    <h5 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Montevideo</h5>
+                    <p class="card-text">Disfruta de tu café favorito en nuestro lugar, acondicionado para trabajo y
+                        reuniones.</p>
+                </div>
+                <div>
+                    <button class="btn btn-info-modal" data-toggle="modal" data-target="#contacto"><span
+                            class="oi oi-plus mr-2"></span>Más información</button>
+                </div>
+            </div>
+            <div class="card card-resto d-flex flex-column justify-content-between shadow m-3">
+                <img class="card-img-top" src="./images/verde.jpg" alt="imagen de comida vegana"
+                    style="height:10rem; object-fit:cover">
+                <div class="card-body">
+                    <h3 class="card-title text-center" data-toggle="tooltip" data-placement="top"
+                        title="Platos veganos con 50% de descuento">Siempre Verde</h3>
+                    <h5 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Montevideo</h5>
+                    <p>¿Buscando comida vegetariana o vegana? Este es tu lugar.</p>
+                </div>
+                <div>
+                    <button class="btn btn-info-modal" data-toggle="modal" data-target="#contacto"><span
+                            class="oi oi-plus mr-2"></span>Más información</button>
+                </div>
+            </div>
+            <div class="card card-resto d-flex flex-column justify-content-between shadow m-3">
+                <img class="card-img-top" src="./images/deliceux.jpg" alt="imagen de comida francesa"
+                    style="height:10rem; object-fit:cover">
+                <div class="card-body">
+                    <h3 class="card-title text-center" data-toggle="tooltip" data-placement="top"
+                        title="Sin promociones disponibles">Délicieux</h3>
+                    <h5 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Canelones</h5>
+                    <p class="card-text">Con dos estrellas Michelin, no es necesario agregar nada más.</p>
+                </div>
+                <div>
+                    <button class="btn btn-info-modal" data-toggle="modal" data-target="#contacto"><span
+                            class="oi oi-plus mr-2"></span>Más información</button>
+                </div>
+            </div>
+            <div class="card card-resto d-flex flex-column justify-content-between shadow m-3">
+                <img class="card-img-top" src="./images/delicatessen.jpg" alt="imagen de postres"
+                    style="height:10rem; object-fit:cover">
+                <div class="card-body">
+                    <h3 class="card-title text-center" data-toggle="tooltip" data-placement="top"
+                        title="Si es tu cumpleaños, sos nuestro invitado">Delicatessen</h3>
+                    <h5 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Maldonado</h5>
+                    <p class="card-text">Los mejores postres, para regalar, regalarse, o disfrutar con nosotros.</p>
+                </div>
+                <div>
+                    <button class="btn btn-info-modal" data-toggle="modal" data-target="#contacto"><span
+                            class="oi oi-plus mr-2"></span>Más información</button>
+                </div>
+            </div>
+            <div class="card card-resto d-flex flex-column justify-content-between shadow m-3">
+                <img class="card-img-top" src="./images/mar.jpg" alt="imagen de comida de mar"
+                    style="height:10rem; object-fit:cover">
+                <div class="card-body">
+                    <h3 class="card-title text-center" data-toggle="tooltip" data-placement="top"
+                        title="Sin promociones disponibles">Sabor del Mar</h3>
+                    <h5 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Montevideo</h5>
+                    <p class="card-text">La mejor comida directo del mar.</p>
+                </div>
+                <div>
+                    <button class="btn btn-info-modal" data-toggle="modal" data-target="#contacto"><span
+                            class="oi oi-plus mr-2"></span>Más información</button>
+                </div>
+            </div>
+            <div class="card card-resto d-flex flex-column justify-content-between shadow m-3">
+                <img class="card-img-top" src="./images/sushi.jpg" alt="imagen de sushi"
+                    style="height:10rem; object-fit:cover">
+                <div class="card-body">
+                    <h3 class="card-title text-center" data-toggle="tooltip" data-placement="top"
+                        title="Descuento del 40% con tarjeta de crédito en horario nocturno">Ramen & Sushi</h3>
+                    <h5 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Montevideo</h5>
+                    <p class="card-text">Especialistas en comida asiática.</p>
+                </div>
+                <div>
+                    <button class="btn btn-info-modal" data-toggle="modal" data-target="#contacto"><span
+                            class="oi oi-plus mr-2"></span>Más información</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="p-4 mt-4">
+        <div class="row align-items-center">
+            <div class="col-sm-4 d-flex flex-column">
+                <a href="https://www.facebook.com">Facebook</a>
+                <a href="https://www.instagram.com">Instagram</a>
+                <a href="https://www.twitter.com">Twitter</a>
+                <a href="https://www.google.com">Google+</a>
+            </div>
+            <div class="col-sm-4 d-flex flex-column">
+                <h3>Oficina Central</h3>
+                <address>
+                    <p><span class="oi oi-home mr-2"></span>Calle 555, Montevideo, Uruguay</p>
+                    <p><span class="oi oi-phone mr-2"></span>+598 55 555 555</p>
+                    <p><span class="oi oi-inbox mr-2"></span>contacto@guiarestaurantes.com</p>
+                </address>
+            </div>
+            <div class="col-sm-4 d-flex flex-column align-items-sm-end">
+                <a href="./about.html">Nosotros</a>
+                <a href="#">Términos y condiciones</a>
+                <a href="./contacto.html">Contacto</a>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="contactoLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactoLabel">Contacto con el restaurante</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="email" class="col-form-label">Tu email: </label>
+                            <input type="email" class="form-control" name="email" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje: </label>
+                            <textarea name="mensaje" id="mensaje" class="form-control"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-contacto">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.99981fe5844515ca90c0.js"></script>
+</body>
+
+</html>
