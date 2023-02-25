@@ -82,7 +82,7 @@
             </div>
         </div>
         <hr>
-        <div id="carouselResto" class="carousel slide carousel-fade shadow" data-ride="carousel" data-interval="2000">
+        <div id="carouselResto" class="carousel slide carousel-fade shadow">
             <ol class="carousel-indicators">
               <li data-target="#carouselResto" data-slide-to="0" class="active"></li>
               <li data-target="#carouselResto" data-slide-to="1"></li>
@@ -282,23 +282,12 @@
             </div>
         </div>
     </div>
-    <!-- build:js dist/index.js -->
+    <!-- build:js dist/main.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-            $('#contacto').on('shown.bs.modal', function(e) {
-                $('.btn-info-modal').addClass('btn-info-modal-open')
-                $('.btn-info-modal').prop('disabled', true)
-            })
-            $('#contacto').on('hidden.bs.modal', function(e) {
-                $('.btn-info-modal').removeClass('btn-info-modal-open')
-                $('.btn-info-modal').prop('disabled', false)
-            })
-        })
-    </script>
+    <script src="js/index.js"></script>
+    <script src="js/precios.js"></script>
     <!-- endbuild -->
 </body>
 
